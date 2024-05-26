@@ -1,6 +1,7 @@
 import theme from "../src/theme";
 import { withThemeFromJSXProvider } from "@storybook/addon-themes";
 import {createGlobalStyle, ThemeProvider} from "styled-components";
+import "../src/story.css";
 
 const preview = {
     decorators: [
