@@ -6,6 +6,8 @@ function Popover({children, content, offset = {}, onVisible, onHide, ...rest}) {
 
     const [visible, setVisible] = useState(false);
 
+    console.log(content)
+
     const handleClick = () => {
         if (visible) {
             setVisible(false);
@@ -18,7 +20,7 @@ function Popover({children, content, offset = {}, onVisible, onHide, ...rest}) {
 
     return (
         <StyledPopover {...rest} onClick={handleClick}>
-           <Content visible={visible} offset={offset}>{content}</Content>
+            <Content visible={visible} offset={offset}>{content}</Content>
             <Triangle visible={visible} offset={offset}/>
             <Target>
                 {

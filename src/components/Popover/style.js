@@ -9,8 +9,8 @@ const Content = styled.div`
   
   bottom: calc(100% + 12px);
   
-  ${({offset}) => offset && `transform: translate(${offset.x || 0}, ${offset.y || 0})`};
-  ${({visible}) => !visible && `display: none`};
+  ${({offset}) => (offset && `transform: translate(${offset.x || 0}, ${offset.y || 0})`)};
+  ${({visible}) => (!visible && `display: none`)};
 `;
 
 const Triangle = styled.div`
@@ -23,8 +23,8 @@ const Triangle = styled.div`
   left: calc(50% - 6px);
   bottom: calc(100% + 12px - 5px);
 
-  ${({offset}) => offset && `transform: translateY(${offset.y || 0})`};
-  ${({visible}) => !visible && `display: none`};
+  ${({offset}) => (offset && `transform: translateY(${offset.y || 0})`)};
+  ${({visible}) => (!visible && `display: none`)};
 `;
 
 const Target = styled.div``;
